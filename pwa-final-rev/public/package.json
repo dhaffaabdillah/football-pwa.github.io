@@ -1,0 +1,22 @@
+{
+  "name": "footballapp",
+  "version": "1.0.0",
+  "description": "PWA Footbal App",
+  "main": "/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./ --ignore-path .gitignore"
+  },
+  "keywords": [
+    "PWA",
+    "Dicoding"
+  ],
+  "author": "Dhaffa Abdillah Hakim",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "web-push": "^3.4.4",
+    "workbox-sw": "^5.1.4"
+  },
+  "dependencies": {}
+}

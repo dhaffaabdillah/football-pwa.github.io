@@ -1,0 +1,26 @@
+{
+    "push_name": "Push Notifications FCM",
+    "gcm_sender_id": "377395733647",
+    "name": "Football App",
+    "author":"Dhaffa Abdillah Hakim",
+    "short_name": "Football App",
+    "theme_color": "#000000",
+    "background_color": "#fafafa",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/index.html",
+    "icons": [
+        {
+          "src": "assets/favicon/maskable_icon.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "maskable"
+        },
+        {
+          "src": "assets/favicon/android-chrome-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "any"
+        }
+    ]
+}

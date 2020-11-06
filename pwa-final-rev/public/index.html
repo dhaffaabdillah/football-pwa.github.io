@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <meta name="theme-color" content="#000000"/>
+    <link rel="manifest" href="/manifest.json">
+    <title>Football App</title>
+    
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->      
+    <div class="navbar-fixed">
+        <nav class="indigo darken-4">
+            <div class="nav-wrapper container">
+                <a href="#" class="brand-logo">Football App</a>
+                <a href="#" data-target="mobile-nav" class="sidenav-trigger">&#9776;</a>
+                <ul class="right topnav hide-on-med-and-down"></ul>
+            </div>
+        </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-nav"></ul>
+    <div class="body-content container"></div>
+             
+    <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+    <script src="assets/js/materialize.min.js"></script>
+    <script src="assets/js/moment.js"></script>
+    <script src="assets/js/moment-timezone-with-data.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
+    <script src="assets/js/sw-register.js"></script>
+</body>
+</html>

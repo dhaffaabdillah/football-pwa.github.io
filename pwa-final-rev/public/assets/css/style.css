@@ -1,0 +1,423 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Utilities */
+.mx {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.fa-star {
+    color: gold;
+    font-size: 1.8rem;
+}
+
+.fa-heart {
+    font-size: 1.3rem !important;
+}
+
+.fa-red {
+    color: red !important;
+}
+
+.fa-grey{
+    color: grey !important;
+}
+
+.text-bold{
+    font-weight: 500 !important;
+}
+
+strong {
+    font-weight: bold;
+}
+
+ /* Flexbox */
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.flex-item{
+    display: flex;
+    padding: 0 0.8rem;
+    /* width: 33.3333%; */
+    width: 25%;
+}
+
+.clubs-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.club-item{
+    display: flex;
+    padding: 0 0.8rem;
+    width: 25%;
+}
+
+.club-item .card{
+    width: 100%;
+}
+
+.card-image img{
+    height: 200px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.home-wrapper{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-wrapper .row.col {
+    padding-top: 12px;
+}
+
+#card-1 .card-content{
+    background-image: url('../images/cover1.webp');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+
+#card-1 a{
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+}
+
+
+.home-wrapper .card-title {
+    margin: 0 0 8px 0;
+}
+
+.teamLogo{
+    /* background-color: darkgray; */
+    padding: 10px;
+}
+
+.home-wrapper .card-content{
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+.home-wrapper .card{
+    background-image: url('../images/stadium1.jpg');
+    background-position: bottom;
+    background-size: cover;
+}
+
+.tabs {
+    height: 100%;
+}
+
+.tabs .tab:hover {
+    cursor: pointer;
+}
+
+.tabs::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+.tabs::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+    background-color: #F5F5F5;
+}
+
+.tabs::-webkit-scrollbar-thumb{
+    background-color: navy;
+}
+
+.tab a{
+    color: white !important;
+}
+
+.myteams-wrapper .card-content{
+    backdrop-filter: blur(5px);
+    color: white;
+}
+
+.myteams-wrapper .card{
+    background-image: url('../images/stadium3.jpg');
+    background-position: bottom;
+    background-size: cover;
+}
+
+
+.matchblock {
+    width: 100%;
+}
+
+.matchblock .header{
+    height: 80px;
+    background: #1f2021;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    color: white;
+}
+
+.matchblock .header span{
+    margin-top: 5px;
+}
+
+.matchblock h2{
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.matchtable .matchrow {
+    width: 100%;
+    /* margin-top: 5px; */
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #e5e5e5;
+}
+
+.matchtable .leftwrap, .matchtable .rightwrap{
+    width: 140px;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.matchtable .centerwrap{
+    /* width: calc(100% - 460px);
+    width: -moz-calc(100% - 460px);
+    width: -webkit-calc(100% - 460px); */
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.matchtable .centerwrap .home, .matchtable .centerwrap .away {
+    width: calc(50% - 50px);
+    width: -moz-calc(50% - 50px);
+    width: -webkit-calc(50% - 50px);
+}
+
+.matchtable .centerwrap .home span {
+    color: #292f33;
+    font-weight: 400;
+    font-size: 20px;
+    width: calc(100% - 40px);
+    width: -moz-calc(100% - 40px);
+    width: -webkit-calc(100% - 40px);
+    display: block;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.matchtable .centerwrap .time {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.matchtable .centerwrap .time span {
+    background: #1f2021;
+    height: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.matchtable .centerwrap .away{
+    /* width: 100%; */
+    display: flex;
+    height: 100%;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.matchtable .centerwrap .away span{
+    color: #292f33;
+    font-weight: 400;
+    font-size: 20px;
+    width: calc(100% - 40px);
+    width: -moz-calc(100% - 40px);
+    width: -webkit-calc(100% - 40px);
+    display: block;
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+@media only screen and (max-width: 320px){
+    .flex-item{
+        width: 100%;
+        padding: 0 0.8rem;
+    }
+    .club-item{
+        width: 100% !important;
+        padding: 0 0.8rem;
+    }
+    .card{
+        width: 100%;
+    }
+}
+
+/* Small Device Breakpoint */
+@media only screen and (max-width: 600px) {
+    body{
+        /* background-color: rgb(255, 245, 105) !important; */
+        background-image: url('../images/stadium1-lg.jpg');
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+    }
+    .card{
+        background: rgba(0,0,0,0.4);
+        background-image: none !important;
+        /* backdrop-filter: blur(4px); */
+    }
+    .about-wrapper{
+        padding: 0 20px 0 20px;
+        background: rgba(0,0,0,0.5);
+    }
+    .flex-item{
+        width: 50%;
+        padding: 0 0.5rem;
+    }
+    .club-item{
+        width: 100%;
+        padding: 0 0.5rem;
+    }
+    .club-item .card{
+        width: 100%;
+    }
+    .contact-wrapper{
+        height: 100vh;
+    }
+    .icon-3d{
+        color: white !important;
+    }
+    .tabs::-webkit-scrollbar{
+        width: 6px;
+        height: 2px;
+        background-color: #F5F5F5;
+    }
+    .matchblock .header h2{
+        font-size: 24px;
+    }
+    .matchtable .centerwrap .home span, .matchtable .centerwrap .away span{
+        font-size: 14px;
+    }
+    .matchtable .centerwrap .time{
+        width: 40px;
+    }
+}
+
+/* Tablet Device Breakpoint */
+@media only screen and (min-width: 603px) {
+    .flex-item{
+        width: 33.3333%;
+    }
+    .club-item{
+        width: 33.3333%;
+    }
+    
+}
+
+/* Large Desktop Breakpoint */
+@media only screen and (min-width: 993px) {
+    .flex-item{
+        width: 25%;
+    }
+    .club-item{
+        width: 25%;
+    }
+}
+/* Extra Large Breakpoint */
+@media only screen and (min-width: 1201px) {
+    
+}
+/*untuk icon */
+.flex-center {
+  width: 100%;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-3d {
+  padding: 10px;
+  -webkit-animation: icon3d 200ms 10;
+  animation: icon3d 200ms 10;
+  color: #000;
+}
+.icon-3d:hover {
+  -webkit-animation: icon3d 200ms infinite;
+  animation: icon3d 200ms infinite;
+}
+
+@keyframes icon3d {
+  0% {
+    text-shadow: 5px 4px #f44336, -5px -6px #2196f3;
+  }
+  25% {
+    text-shadow: -5px -6px #f44336, 5px 4px #2196f3;
+  }
+  50% {
+    text-shadow: 5px -4px #f44336, -8px 4px #2196f3;
+  }
+  75% {
+    text-shadow: -8px -4px #f44336, -5px -4px #2196f3;
+  }
+  100% {
+    text-shadow: -5px 0 #f44336, 5px -4px #2196f3;
+  }
+}
